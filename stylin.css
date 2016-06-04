@@ -1,0 +1,245 @@
+/*html {background: url("images/waterfall_2.jpg") no-repeat center top;
+	background-size: auto 400px;
+	position: relative;}*/
+
+
+@font-face {font-family: name;
+    src: url("fonts/winterthur/WinterthurCondensed.ttf");}
+    
+@font-face {font-family: content_font;
+    src: url("fonts/MankSans.ttf");}
+    
+.subtitle {font-size: 24px;
+	/*text-decoration: underline;*/
+	font-variant: small-caps;
+	background: #C6FFA1; /*#E8FFD9*/
+	border-radius: 5px;
+	color: blue;}
+
+	
+/*.profile {width: 200px;
+	border: 2px solid white;
+	border-radius: 50%;} */
+
+body {position: absolute;
+        overflow-x: hidden;}
+
+#top {/*background: url("images/splatters_background.jpg") no-repeat center top;
+	background-size: cover;*/
+	position: relative;
+	position: fixed;
+	width: 100%;
+	height: 400px;
+	/*position: absolute;*/
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font-family: name;
+	font-size: 50px;
+	/*background-color:yellow;*/}
+
+.pic {background: url("images/splatters_background.jpg") no-repeat center top;
+background-size: cover;}
+
+#empty {width: 100%;
+	height: 400px;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+	position: relative;
+}
+	
+#overlay {width: 300px;
+	height: 90px;
+	background-color: #C6FFA1;
+	/*opacity: 0.5;
+	filter: alpha(opacity=50);*/
+	position: absolute;
+	left: 80px;
+	top: 40px;
+        box-shadow: 5px 5px 10px #888888;
+        outline: white solid thin;}
+	
+.bjl{color: blue;
+	font-family: name;
+	position: absolute;
+	left: 90px;
+	top: 50px;}
+	
+
+#main {background-color: white;
+	width: 100%;
+	height: auto;
+	font-family: content_font;
+	letter-spacing: 2px;
+	font-size: 18px;
+        overflow: auto;
+        position: relative;
+	}
+	
+#content {/*background-color: orange;*/
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	}
+	
+
+#aboutme {/*background-color: red;*/
+	width: 100%;
+	height: auto;
+	padding-top: 40px;
+	}
+
+#skills {/*background-color: pink;*/
+	width: 600px;
+	height: auto;
+	position: relative;
+	clear: both;
+	padding-top: 40px;
+	}
+
+#skills_list {float: left;
+	padding-right: 10px;
+	/*margin-top: -17px;*/}
+	
+#levels {float: left;
+	/*padding-top: 2px;*/
+	position: absolute;
+	left: 105px;
+	}
+	
+li {list-style-type: none;
+        padding: 2px;}
+
+.lhead {text-decoration: underline;
+	/*padding-bottom: 2px;*/}
+
+.space {padding-right: 100px;}
+	
+.bars img {height: 18px;}
+
+.html {width: 450px;}
+.css {width: 425px;}
+.js {width: 150px;}
+.jqu {width: 125px;}
+.shop {width: 325px;}
+.ill {width: 300px;}
+
+
+#work {/*background-color: grey;*/
+	padding-top: 20px;
+	width: 100%;
+	height: auto;
+	float: left;
+	padding-top: 40px;
+}
+	
+#work li {list-style-type: none;}
+
+#work a {text-decoration: none;
+	color: blue;
+	text-shadow:
+    -1px -1px 0 #C6FFA1,
+    1px -1px 0 #C6FFA1,
+    -1px 1px 0 #C6FFA1,
+    1px 1px 0 #C6FFA1;}
+    
+#column1 {float: left;
+	width: 45%;}
+
+#column2 {float: left;
+	width: 45%;}
+
+.glpic {padding: 10px 0;
+	width: 95%;}
+
+.pfpic {padding: 10px 0;
+	width: 95%;}
+
+.piquemoc {width: 95%;
+	padding: 10px 0;}
+
+.stmarkpic {width: 95%;
+	padding: 10px 0;}
+
+#mobilework {display: none;
+	float: left;}
+
+#bottom {/*background-color: green;*/
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	padding: 10px;}
+
+#contact {/*background-color: #938204;*/
+	padding-top: 40px;
+	width: 100%;
+	float: left;
+	}
+		
+/* @media Rule */
+@media screen and (min-width: 1350px) {
+	#top, #empty {height: 500px;}
+        #main {width: 120%;}
+        #aboutme {width: 80%;}
+}
+@media screen and (max-width: 1150px) {
+	#top, #empty {height: 300px;}
+        #main {width: 100%;}
+}
+@media screen and (max-width: 875px) {
+	#top, #empty {height: 250px;}
+}
+@media screen and (max-width: 700px) {
+	.pic {background-size: 700px;}
+	#top, #empty {
+		height: 200px;
+		font-size: 42px;
+		}
+	#overlay {
+		width: 250px;
+		height: 75px;}
+	
+}
+@media screen and (max-width: 1200px) {
+	#content, #bottom {width: 65%;}
+}
+@media screen and (max-width: 800px) {
+	#content, #bottom {width: 80%;}
+}
+
+@media screen and (max-width: 590px) {
+	#aboutme, #work {width: 400px;}
+}
+
+@media screen and (max-width: 650px) {
+
+	#skills, #column1, #column2 {display: none;}
+
+    
+    #mobilework {display: block;
+		float: left;}
+                
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    
+    #main {width: 100%;
+           overflow-x: hidden;}
+    #content, #bottom {width: 65%;}
+    
+    #about {width: 100%;
+		padding-right: 0;}
+    .ab {font-size: 24px;}
+		
+    #skills, #column1, #column2 {display: none;}
+    
+    #mobilework {display: block;
+		float: left;
+                font-size: 24px;}
+       
+     #contact {font-size: 24px;}
+}
+
+.anntest a {color: white;}
