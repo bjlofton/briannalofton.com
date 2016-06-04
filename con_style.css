@@ -1,0 +1,99 @@
+/*@font-face {font-family: contact_text;
+    src: url("fonts/champagne_limousines/Champagne & Limousines.ttf");}
+    
+@font-face {font-family: contact_text;
+    src: url("fonts/winterthur/WinterthurCondensed.ttf");}*/
+    
+@font-face {font-family: content_font;
+    src: url("fonts/MankSans.ttf");}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*body {
+	font-size: 62.5%;
+	font-family: Helvetica, sans-serif;
+	background: url(images/stripe.png) repeat;
+}*/
+
+/*p {
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}*/
+
+#page-wrap {padding-top: 5px;}
+	/*padding: 20px 50px 20px 50px;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}*/
+
+#contact-area {
+	width: 600px;}
+
+#contact-area input, #contact-area textarea {
+	padding-left: 5px;
+	padding-right; 5px;
+	width: 400px;
+	font-family: contact_text;
+	font-size: 20px;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {width: 550px;
+	padding: 5px;}
+
+/*#contact-area textarea {
+	height: 90px;
+}*/
+
+/*#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}*/
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: left;
+	clear: both;
+	background-color: #C6FFA1;
+	color: blue;
+}
+
+label {font-family: content_font;
+	float: left;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 18px;
+}*/
+
+input[type="text"] {float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;}
+	
+#Message {float: left;
+	clear: both;}
+	
+.submit-button {font-family: content_text;}
+	
+@media screen and (max-width: 700px) {
+	textarea#Message {width: 510px;}
+}
+@media screen and (max-width: 640px) {
+	label {display: block;
+		width: 300px;}
+	textarea#Message {width: 400px;}
+}
+	
+@media only screen and (max-device-width: 480px) {
+	 /*#contact-area input, #contact-area textarea, label, #skills {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    	font-weight: 300;
+        font-size: 1.375em;
+	}*/
+}
